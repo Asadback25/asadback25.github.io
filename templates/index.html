@@ -124,6 +124,8 @@
       margin: 12px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.2);
       transition: transform 0.3s;
+      max-width: 100%;
+      height: auto;
     }
     .github-stats img:hover { transform: scale(1.05); }
     /* Contact */
@@ -138,6 +140,18 @@
     }
     footer a { color: #708993; text-decoration: none; }
     footer a:hover { text-decoration: underline; }
+
+    /* 📱 Responsive tweaks */
+    @media (max-width: 991px) {
+      .hero {
+        text-align: center;
+        padding: 100px 0 60px;
+      }
+      .hero h1 { font-size: 2.2rem; }
+      .hero p { font-size: 1rem; }
+      .hero img { width: 180px; height: 180px; }
+      .github-stats img { margin: 10px auto; display: block; }
+    }
   </style>
 </head>
 <body>
